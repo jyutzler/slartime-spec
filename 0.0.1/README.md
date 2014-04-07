@@ -43,13 +43,13 @@ Feature objects with a `datetime` member MUST conform to the requirements in thi
 
 A `datetime` member MUST have a member named `type`. 
 This member's value is a string that determines the type of temporal object.
-The value of the member MUST be one of the following strings:
+The value of the `type` member MUST be one of the following strings:
 
    * "Instant"
    * "Period"
    * "Sequence"
    
-The case of the type member values MUST be as shown here.
+The case of the `type` member values MUST be as shown here.
 
 ### 2.2. Temporal Position
 
