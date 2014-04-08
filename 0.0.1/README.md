@@ -17,7 +17,7 @@ Authors:
     * 2.3. [Instant](#21-type)
     * 2.4. [Period](#22-period)
     * 2.5. [Sequence](#23-sequence)
-  * 3\. [Examples](#3-examples)
+  * 3\. [Example](#3-example)
 
 ## 1. Introduction
 
@@ -74,6 +74,48 @@ The second member of the array (index "1") MUST be the end of the period.
 For the type "Sequence", the `positions` array MUST contain one or more temporal positions. 
 The members of the array MUST be in chronological order from earliest to latest.
 
-## 3. Examples
+## 3. Example
 
-TBD
+```
+{ "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
+        "datetime": {"type": "Instant", "positions": ["2014-04-08T14:24:32.117Z"]},
+        "properties": {"prop0": "value0"}
+      },
+      { "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [102.0, 0.0], [103.0, 1.0], [104.0, 0.0], [105.0, 1.0]
+            ]
+          },
+        "datetime": {
+           "type": "Period", 
+           "positions": ["2010-04-08T14:24:32.117Z", "2014-04-08T14:24:32.117Z"]},
+        "properties": {
+          "prop0": "value0",
+          "prop1": 0.0
+          }
+      },
+      { "type": "Feature",
+         "geometry": {
+           "type": "MultiPoint",
+           "coordinates": [
+             [100.0, 0.0], [101.0, 0.0], [101.0, 1.0],
+               [100.0, 1.0], [100.0, 0.0] ]
+         },
+        "datetime": {
+           "type": "Sequence", 
+           "positions": ["2010-04-08T14:24:32.117Z", "2011-05-08T14:24:32.117Z", 
+                         "2012-06-08T14:24:32.117Z", "2013-07-08T14:24:32.117Z",
+                         "2014-04-08T14:24:32.117Z"]},
+         "properties": {
+           "prop0": "value0",
+           "prop1": {"this": "that"}
+           }
+      }
+    ]
+}
+```
