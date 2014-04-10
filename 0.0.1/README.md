@@ -14,9 +14,9 @@ Authors:
   * 2\. [Temporal Objects](#2-temporal-objects)
     * 2.1. [Type](#21-type)
     * 2.2. [Temporal Position](#22-temporal-position)
-    * 2.3. [Instant](#21-type)
-    * 2.4. [Period](#22-period)
-    * 2.5. [Sequence](#23-sequence)
+    * 2.3. [Instant](#23-instant)
+    * 2.4. [Period](#24-period)
+    * 2.5. [Sequence](#25-sequence)
   * 3\. [Example](#3-example)
 
 ## 1. Introduction
@@ -30,9 +30,9 @@ This subset was curated in order to support the most common temporal requirement
 
 ### 1.1. Definitions
 
-JavaScript Object Notation (JSON), and the terms “object”, “name”, “value”, “array”, and “number”, are defined in [IETF RTC 4627](http://www.ietf.org/rfc/rfc4627.txt).
+JavaScript Object Notation (JSON), and the terms ï¿½objectï¿½, ï¿½nameï¿½, ï¿½valueï¿½, ï¿½arrayï¿½, and ï¿½numberï¿½, are defined in [IETF RTC 4627](http://www.ietf.org/rfc/rfc4627.txt).
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [IETF RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
+The key words ï¿½MUSTï¿½, ï¿½MUST NOTï¿½, ï¿½REQUIREDï¿½, ï¿½SHALLï¿½, ï¿½SHALL NOTï¿½, ï¿½SHOULDï¿½, ï¿½SHOULD NOTï¿½, ï¿½RECOMMENDEDï¿½, ï¿½MAYï¿½, and ï¿½OPTIONALï¿½ in this document are to be interpreted as described in [IETF RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 
 ## 2. Temporal Objects
 
