@@ -8,6 +8,10 @@ A simple specification for encoding temporal data in [GeoJSON](http://geojson.or
 
 Initial Revision
 
+### [0.0.2](0.0.2/README.md)
+
+Adding datetime collections 
+
 ## Authors
 
 * Jeff Yutzler (Image Matters LLC)
