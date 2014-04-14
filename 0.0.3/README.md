@@ -49,7 +49,7 @@ The value of the `type` member MUST be one of the following strings:
    * "Instant"
    * "Period"
    * "Sequence"
-   * "DatetimeCollection"
+   * "WhenCollection"
    
 The case of the `type` member values MUST be as shown here.
 
@@ -79,9 +79,9 @@ For the type "Sequence", the `when` member MUST have a member named `positions`.
 The `positions` member MUST be an array containing one or more temporal positions. 
 The members of the array MUST be in chronological order from earliest to latest.
 
-### 2.6. DatetimeCollection
+### 2.6. WhenCollection
 
-For the type "DatetimeCollection", the `when` member MUST have a member named `whens`.
+For the type "WhenCollection", the `when` member MUST have a member named `whens`.
 The `whens` member MUST be an array of `when` objects as described elsewhere in this document.
 
 ## 3. Example
@@ -138,7 +138,7 @@ The `whens` member MUST be an array of `when` objects as described elsewhere in 
             ]
         },
         "when": {
-            "type": "DatetimeCollection",
+            "type": "WhenCollection",
             "whens": [
                 {"type": "Period",
                  "positions": ["2014-04-15T11:32:00Z", "2014-04-16T05:00:00Z"]},
