@@ -17,7 +17,7 @@ Authors:
     * 2.3. [Instant](#23-instant)
     * 2.4. [Period](#24-period)
     * 2.5. [Sequence](#25-sequence)
-    * 2.6. [WhenCollection](#25-whencollection)
+    * 2.6. [WhenCollection](#26-whencollection)
   * 3\. [Example](#3-example)
 
 ## 1. Introduction
