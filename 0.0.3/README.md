@@ -57,7 +57,9 @@ The case of the `type` member values MUST be as shown here.
 
 A temporal position is the fundamental temporal construct. 
 Temporal positions MUST be encoded as an [ISO-8601](http://www.iso.org/iso/home/standards/iso8601.htm) string 
-unless otherwise noted.
+unless otherwise noted. 
+A suitable profile for ISO-8601 can be found in [RFC 3339](http://www.ietf.org/rfc/rfc3339.txt).
+
 
 ### 2.3. Instant
 
