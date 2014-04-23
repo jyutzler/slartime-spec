@@ -37,12 +37,12 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 ## 2. Temporal Objects
 
-Feature objects within a GeoJSON object MAY have a member with the name `chronology` that describes a temporal aspect of the feature.
-Feature objects with a `chronology` member MUST conform to the requirements in this document.
+Feature objects within a GeoJSON object MAY have a member with the name `when` that describes a temporal aspect of the feature.
+Feature objects with a `when` member MUST conform to the requirements in this document.
 
 ### 2.1. Type
 
-A `chronology` member MUST have a member named `type`. 
+A `when` member MUST have a member named `type`. 
 This member's value is a string that determines the type of temporal object.
 The value of the `type` member MAY be one of the following strings:
 
@@ -59,7 +59,7 @@ Instants SHOULD conform to the profile found in [RFC 3339](http://www.ietf.org/r
 
 ### 2.3. MultiInstant
 
-For the type "MultiInstant", the `chronology` member MUST have a member named `instants`.
+For the type "MultiInstant", the `when` member MUST have a member named `instants`.
 The `instants` member MUST be an array containing one or more instants. 
 The members of the array MUST be in chronological order from earliest to latest.
 
@@ -90,7 +90,7 @@ The array indexes of the property elements and instants SHOULD be aligned.
              [100.0, 0.0], [101.0, 0.0], [101.0, 1.0],
                [100.0, 1.0], [100.0, 0.0] ]
          },
-        "chronology": {
+        "when": {
            "type": "MultiInstant", 
            "instants": ["2010-04-08T14:24:32.117Z", "2011-05-08T14:24:32.117Z", 
                          "2012-06-08T14:24:32.117Z", "2013-07-08T14:24:32.117Z",
@@ -105,7 +105,7 @@ The array indexes of the property elements and instants SHOULD be aligned.
            "type": "Point",
            "coordinates": [100.0, 0.0]
          },
-        "chronology": {
+        "when": {
            "type": "MultiInstant", 
            "instants": ["2010-04-08T14:24:32.117Z", "2011-05-08T14:24:32.117Z", 
                          "2012-06-08T14:24:32.117Z", "2013-07-08T14:24:32.117Z",

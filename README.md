@@ -23,7 +23,6 @@ that change over time.
 ### [0.1.1](0.1.1/README.md)
 
    * Focusing specifically on the moving/changing features case
-   * Changing "when" to "chronology"
    * Broadening use of the term "instant" to include temporal position
    * Changing "Sequence" to "MultiInstant"
    * Relaxing many MUST statements to SHOULD
