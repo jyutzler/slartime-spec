@@ -1,0 +1,112 @@
+{
+  "@context": {
+    "geojson": "http://ld.geojson.org/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "crs": {
+      "@id": "geojson:crs",
+      "@type": "@id"},
+    "circa": "geojson:circa",
+    "coordinates": "geojson:coordinates",
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
+    "description": "http://purl.org/dc/terms/description",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "geometry": "geojson:geometry",
+    "id": "@id",
+    "properties": "geojson:properties",
+    "start": "http://www.w3.org/2006/time#hasBeginning",
+    "stop": "http://www.w3.org/2006/time#hasEnding",
+    "title": "http://purl.org/dc/terms/title",
+    "name": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "when": "geojson:when",
+    "mf": "http://mf.opengeospatial.org/vocab#",
+    "MovingFeature": "mf:MovingFeature",
+    "LinearTrajectory": "mf:LinearTrajectory",
+    "idref": "mf:idref",
+    "state": "http://example.com/vocab#:state",
+    "typecode":"http://example.com/vocab#:typecode"
+  },
+  "bbox": [9.23, 50.23, 9.27, 50.31],
+  "circa":{
+    "start": "2012-01-17T12:33:41Z",
+    "stop": "2012-01-17T12:37:00Z",
+    "type": "Interval"
+  },
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+      }
+    },
+  "header": {},
+  "features":[
+    {"id": "a",
+     "type": "MovingFeature",
+     "properties": {"name":"Joe Blow"}},
+    {"id": "b",
+     "type": "MovingFeature",
+     "properties": {"name":"Jane Doe"}},
+    {"id": "LT0001",
+     "type":"LinearTrajectory",
+     "geometry":{
+       "type":"LineString",
+       "coordinates": [[2.0, 11.0],[3.0, 12.0]],
+       "properties": {"idref": "a",
+                      "state":"walking",
+                      "typecode":"1"}
+     },
+     "when":{
+       "type":"Interval",
+       "start":10,
+       "stop":150
+     }
+    },
+    {"id": "LT0001",
+     "type":"LinearTrajectory",
+     "geometry":{
+       "type":"LineString",
+       "coordinates": [[2.0, 11.0],[3.0, 12.0]],
+       "properties": {"idref": "b",
+                      "state":"walking",
+                      "typecode":"2"}
+     },
+     "when":{
+       "type":"Interval",
+       "start":10,
+       "stop":190
+     }
+    },
+    {"id": "LT0001",
+     "type":"LinearTrajectory",
+     "geometry":{
+       "type":"LineString",
+       "coordinates": [[2.0, 11.0],[3.0, 12.0]],
+       "properties": {"idref": "a",
+                      "state":"walking",
+                      "typecode":"2"}
+     },
+     "when":{
+       "type":"Interval",
+       "start":150,
+       "stop":190
+     }
+    }
+  ]  
+}
